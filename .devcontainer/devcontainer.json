@@ -1,0 +1,34 @@
+{
+    "image": "mcr.microsoft.com/devcontainers/java:0-17",
+    "features": {
+        "ghcr.io/nordcominc/devcontainer-features/android-sdk:1": {},
+        "ghcr.io/devcontainers/features/java:1": {
+            "version": "none",
+            "installMaven": "false",
+            "installGradle": "true"
+        }
+    },
+
+        
+    // Use 'postCreateCommand' to run commands after the container is created.
+    //"postCreateCommand": "echo \"This file was added by the postCreateCommand.\" > TEMP.md",
+    
+
+    // Configure tool-specific properties.
+    "customizations": {
+        // Configure properties specific to VS Code.
+        "vscode": {
+            "settings": {
+                "files.defaultLanguage": "en"
+            },
+            
+            // Add the IDs of extensions you want installed when the container is created.
+            "extensions": [
+                "streetsidesoftware.code-spell-checker",
+                "vscjava.vscode-java-pack",
+                "adelphes.android-dev-ext",
+                "tamasfe.even-better-toml"
+            ]
+        }
+    }
+}
